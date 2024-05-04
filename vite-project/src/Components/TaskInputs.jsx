@@ -25,9 +25,9 @@ const TaskInput = () => {
   };
 
   return (
-    <div className="flex items-center justify-center mt-[50px]">
+    <div className="flex flex-col sm:flex-row items-center md:pt-5 justify-center mt-5 sm:mt-0">
       <input
-        className="border border-gray-300 rounded-tl-xl rounded-bl-xl py-2 px-4 focus:outline-none focus:border-green-500"
+        className="border border-gray-300 rounded-tl-xl rounded-bl-xl py-2 px-4 focus:outline-none focus:border-green-500 mb-2 sm:mb-0 sm:mr-2"
         type="text"
         placeholder="Enter task"
         value={taskName}
@@ -35,7 +35,7 @@ const TaskInput = () => {
         onKeyPress={handleKeyPress}
       />
       <button
-        className="ml-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
+        className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
         onClick={handleAddTask}
       >
         Add Task
